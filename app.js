@@ -21,16 +21,16 @@ app.use('/',EmployeeRouter);
 connection
     .authenticate()
     .then(()=> {
-        console.log("conexao feita");
+        console.log("connection completed");
     })
-    .catch((erro)=>{console.log(erro)});
+    .catch((error)=>{console.log(error)});
 
 app.get('/', (req, res)=>{
   res.render('index.ejs')
 })
 app.listen(8080, ()=>
     {
-        console.log("funcionando");
+        console.log("working");
         
     });
     
